@@ -1,0 +1,7 @@
+#message-pane {
+	position: fixed;
+	top: 100px;
+	left: 100px;
+	text-align: center;
+	z-index: 50;
+}

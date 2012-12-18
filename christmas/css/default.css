@@ -1,6 +1,7 @@
 @CHARSET "UTF-8";
 
 @import url("snow.css");
+@import url("message.css");
 
 html, body {
 	margin: 0;

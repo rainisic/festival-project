@@ -6,15 +6,21 @@
 	<link rel="stylesheet" type="text/css" href="css/default.css">
 	<script type="text/javascript" src="../lib/js/jquery/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/snow.js"></script>
+	<script type="text/javascript" src="js/message.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
+	
+		// Generate snow.
 		var genSnow = setInterval(function() {
-			Snow();
+			var snow = new Snow();
+			snow.fall();
 		}, 100);
+
 	});
 	</script>
 </head>
 <body>
 	<div id="snow-pane"></div>
+	<div id="message-pane"></div>
 </body>
 </html>
