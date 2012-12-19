@@ -7,20 +7,25 @@
 	<script type="text/javascript" src="../lib/js/jquery/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/snow.js"></script>
 	<script type="text/javascript" src="js/message.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function() {
-	
-		// Generate snow.
-		var genSnow = setInterval(function() {
-			var snow = new Snow();
-			snow.fall();
-		}, 100);
-
-	});
-	</script>
+	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
-	<div id="snow-pane"></div>
-	<div id="message-pane"></div>
+	
+	<!-- Step 0: Prepare -->
+	<div id="step-prompt" class="step-frame">
+		<p>Welcome to Festival Project - Christmas</p>
+		<p>浏览器界实在是太奇葩了～我实在是太懒了～所以请用<a href="http://www.google.cn/intl/zh-CN/chrome/browser/" title="下载Google Chrome浏览器">Google Chrome</a>浏览器～</p>
+	</div>
+
+	<!-- Step 1: Message -->
+	<div id="step-message" class="step-frame">
+		<div id="background"></div>
+		<div id="message-pane"></div>
+	</div>
+
+	<!-- Step 2: Snow -->
+	<div id="step-snow" class="step-frame">
+		<div id="snow-pane"></div>
+	</div>
 </body>
 </html>

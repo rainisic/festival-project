@@ -1,7 +1,12 @@
 #message-pane {
 	position: fixed;
-	top: 100px;
-	left: 100px;
+	top: 45%;
+	width: 100%;
 	text-align: center;
 	z-index: 50;
+}
+
+.messages {
+	display: none;
+	color: white;
 }

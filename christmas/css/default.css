@@ -6,5 +6,32 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background: black;
+}
+
+#background {
+	background: url('../images/foreground.png') 5% 5%, url('../images/midground.png') 50% 50%, url('../images/background.png') 90% 110%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transition: left 300s linear;
+	z-index: 1;
+}
+
+body:target #background {
+	left: -5000px;
+}
+
+body:hover #background {
+	left: -9999px;
+}
+
+.step-frame {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
 }
