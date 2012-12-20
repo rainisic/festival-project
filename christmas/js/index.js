@@ -1,12 +1,38 @@
 $(function() {
 	prompting();
-	setTimeout(messaging, 2000);
+	
+	$(document).keydown(function(event) {
+		
+		// 
+		console.log(event.keyCode);
+		if (event.keyCode == 122) {
+			messaging();
+		}
+	});
 });
 
 function prompting() {
 	
 	// Show the promoting.
 	$("#step-prompt").show();
+}
+
+function messaging() {
+	
+	// Hide the previous step pane.
+	$("#step-prompt").fadeOut(1000);
+
+	// Show this step pane.
+	$("#step-message").fadeIn(1000);
+
+	// Background move.
+	$("#background").css("left", "-9999px");
+	
+	// Load all messages.
+	Message.load();
+	if (Message.play()) {
+		snowing();
+	}
 }
 
 function snowing() {
@@ -22,20 +48,4 @@ function snowing() {
 		new Snow().fall();
 	}, 100);
 	
-}
-
-function messaging() {
-	
-	// Hide the previous step pane.
-	$("#step-prompt").fadeOut(1000);
-
-	// Show this step pane.
-	$("#step-message").fadeIn(1000);
-	
-	// Load all messages.
-	Message.load();
-	var index = 0;
-	var messageInterval = setInterval(function() {
-		
-	}, 1000);
 }

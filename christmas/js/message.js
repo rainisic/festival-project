@@ -18,3 +18,30 @@ Message.load = function() {
 		new Message(this);
 	});
 }
+
+Message.play = function() {
+	
+	var playInterval = setInterval(function() {
+
+		if ($(".messages:visible").size() == 0) {
+			
+			// Show the first message.
+			$(".messages:first").fadeIn(1000);
+
+		} else if ($(".messages:visible").next().size() > 0) {
+			
+			// Show the next message.
+			$(".messages:visible").fadeOut(1000, function() {
+				$(this).next().fadeIn(1000);
+			});
+
+		} else {
+		
+			// Clear interval.
+			clearInterval(playInterval);
+
+			// Return status.
+			return true;
+		}
+	}, 3000);
+}
