@@ -1,7 +1,22 @@
 #step-prompt {
-	padding: 10px 50px;
+	width: 800px;
+	margin: 0 auto;
+}
+
+#step-prompt p {
+	font-size: 18px;
 }
 
 #step-prompt h1 {
 	text-align: center;
+	margin: 100px 0;
+}
+
+#step-prompt li {
+	margin: 15px 0;
+}
+
+#step-prompt a {
+	color: red;
+	font-weight: bold;
 }
