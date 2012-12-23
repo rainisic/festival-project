@@ -1,4 +1,5 @@
-#background {
+﻿@CHARSET "UTF-8";
+#step-conversation .background {
 	background: url('../images/foreground.png') 5% 5%, url('../images/midground.png') 50% 50%, url('../images/background.png') 90% 110%;
 	position: fixed;
 	top: 0;
@@ -9,7 +10,7 @@
 	z-index: 1;
 }
 
-#message-pane {
+#step-conversation #message-pane {
 	position: fixed;
 	top: 45%;
 	width: 100%;
@@ -17,7 +18,19 @@
 	z-index: 50;
 }
 
-.messages {
+#step-conversation .messages {
 	display: none;
 	color: white;
+	font-family: "楷体";
+	font-size: 22px;
+	letter-spacing: 0.2em;
+}
+
+#step-conversation .messages .big {
+	font-size: 32px;
+}
+
+#step-conversation .messages .red {
+	color: red;
+	font-weight: bold;
 }

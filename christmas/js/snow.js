@@ -1,7 +1,7 @@
-// Constant values.
+﻿// Constant values.
 var MIN_RADIUS = 5;
 var MAX_RADIUS = 10;
-var MAX_SPEED = 100;
+var MAX_SPEED = 100000;
 
 function Snow() {
 
@@ -9,7 +9,7 @@ function Snow() {
 	this.radius = Math.random() * (MAX_RADIUS - MIN_RADIUS) + MIN_RADIUS;
 	this.posX = Math.random() * window.screen.width;
 	this.posY = 0;
-	this.speed = this.radius * MAX_SPEED;
+	this.speed = MAX_SPEED / this.radius;
 	
 	// Add the snow.
 	this.dom = $("<div class='snow'></div>");
@@ -28,7 +28,7 @@ Snow.prototype.fall = function() {
 	
 	$(this.dom).animate({
 		top: "100%"
-	}, window.screen.height / this.speed * 10000, function() {
+	}, this.speed, "swing", function() {
 		$(this).remove();
 	});
 }
