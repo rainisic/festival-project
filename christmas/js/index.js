@@ -105,6 +105,6 @@ function snow() {
 	// Generate snow.
 	var snowInterval = setInterval(function() {
 		new Snow().fall();
-	}, 300);
+	}, 200);
 	
 }
