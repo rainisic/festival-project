@@ -3,18 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<title>Birthday Present</title>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
 	<style type="text/css">
-	html, body { margin: 0; padding:0; }
-	canvas { position: absolute; background-color: black; }
 	</style>
 </head>
 <body>
-	
-	<canvas id="main-canvas"></canvas>
+
+	<!-- Scene 0: Prepare scene -->
+	<section id="step0" class="scene" style="display: block;">
+		<h1>誕生日おめでとう，猫ちゃん</h1>
+		<header id="ribbon">Present By: 冰</header>
+		<figure id="gallery">
+			<img src="bg/0.jpg">
+			<img src="bg/1.jpg">
+			<img src="bg/2.jpg">
+			<img src="bg/3.jpg">
+			<img src="bg/4.jpg">
+		</figure>
+	</section>
+
+	<!-- Scene 1 -->
+	<section id="step1" class="scene">
+	</section>
+
+	<!-- Background music -->
+	<audio autoplay loop preload>
+		<source src="sounds/EGOIST - キミソラキセキ.mp3" type="audio/mpeg">
+	</audio>
 	
 	<!-- Include JavaScript library -->
-	<script type="text/javascript" src="../lib/js/jquery/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="../lib/js/jquery/jquery-migrate-1.1.1.min.js"></script>
 	<script type="text/javascript" src="js/default.js"></script>
 </body>
 </html>
