@@ -4,18 +4,47 @@ html, body {
 	padding: 0;
 }
 
+@font-face {
+	font-family: "Segoe Script";
+	src: url("../../lib/webfonts/segoesc.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+#background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	z-index: -1;
+	margin: 0;
+	padding: 0;
+}
+
 .scene {
 	display: none;
 }
 
-#ribbon {
+#step0 h1 {
+	margin-top: 70px;
+	margin-left: 50px;
+	font-family: "Segoe Script";
+	font-size: 2.5em;
+	text-shadow: 3px 5px 5px #aaa;
+}
+
+#step0 #ribbon {
 	position: fixed;
 	top: 60px;
 	right: -50px;
 	width: 250px;
 	height: 30px;
 	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
 	background-image: -webkit-linear-gradient(bottom, rgb(170, 0, 0), rgb(160, 0, 0));
+	background-image: -moz-linear-gradient(bottom, rgb(170, 0, 0), rgb(160, 0, 0));
 	color: white;
 	font-weight: bold;
 	text-align: center;
@@ -24,38 +53,6 @@ html, body {
 	border-top: 1px white dashed;
 	border-bottom: 1px white dashed;
 	outline: 1px rgb(170, 0, 0) solid;
-	box-shadow: 0 0 10px black;
-}
-
-#gallery {
-	position: relative;
-	border: 1px silver solid;
-	width: 300px;
-	height: 225px;
-}
-#gallery img {
-	position: absolute;
-	width: 200px;
-	height: 150px;
-}
-
-#gallery img:nth-child(1) {
-	top: 37px;
-	left: 50px;
-	z-index: 1;
-}
-
-#gallery img:nth-child(2) {
-	-webkit-transform: rotate(-30deg);
-}
-
-#gallery img:nth-child(3) {
-	-webkit-transform: rotate(30deg);
-	right: 0;
-}
-
-#gallery img:nth-child(4) {
-}
-
-#gallery img:nth-child(5) {
+	box-shadow: 0 0 10px gray;
+	z-index: 99;
 }
