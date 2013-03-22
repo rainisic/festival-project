@@ -9,24 +9,44 @@
 </head>
 <body>
 
-
-	<!-- Scene 0: Prepare scene -->
-	<section id="step0" class="scene">
-		<h1>Happy Birthday :-)</h1>
+	<!-- Prepare scene -->
+	<section id="step-prepare" class="scene">
+		<h1>Happy Birthday&nbsp;<a id="smile">:-)</a></h1>
 		<header id="ribbon">Presented By: 冰</header>
 		<figure id="background"><img src="bg/bg1.jpg"></figure>
+		<ul id="operation-list">
+			<li><a id="enter-step-video">Video - The past</a></li>
+			<li><a id="enter-step-music">Music Room</a></li>
+			<li><a id="enter-step-album">Album</a></li>
+		</ul>
 	</section>
 
-	<!-- Scene 1 -->
-	<section id="step1" class="scene">
+	<!-- Video scene -->
+	<section id="step-video" class="scene">
+		<div id="lyrics">
+			<div id="jp-lyrics"></div>
+			<div id="horizon"></div>
+			<div id="cn-lyrics"></div>
+		</div>
+		<audio preload>
+			<source src="sounds/EGOIST - キミソラキセキ.mp3" type="audio/mpeg">
+		</audio>
 	</section>
 
-	<!-- Background music -->
-	<audio autoplay loop preload>
-		<source src="sounds/EGOIST - キミソラキセキ.mp3" type="audio/mpeg">
-	</audio>
+	<!-- Music room scene -->
+	<section id="step-music" class="scene">
+	</section>
+
+	<!-- Album scene -->
+	<section id="step-album" class="scene">
+	</section>
 	
 	<!-- Include JavaScript library -->
+	<script type="text/javascript" src="../lib/js/jquery/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../lib/js/jquery/jquery-migrate-1.1.1.min.js"></script>
 	<script type="text/javascript" src="js/default.js"></script>
+	<script type="text/javascript" src="js/SceneController.js"></script>
+	<script type="text/javascript" src="js/step-prepare/Background.js"></script>
+	<script type="text/javascript" src="js/step-video/Lyrics.js"></script>
 </body>
 </html>

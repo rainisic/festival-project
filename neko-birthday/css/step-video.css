@@ -1,0 +1,37 @@
+#step-video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: black;
+}
+
+#step-video #lyrics {
+	position: fixed;
+	display: none;
+	bottom: 50px;
+	right: 0;
+	color: white;
+	font-size: 1.5em;
+	font-family: "楷体", "楷体_GB2312";
+}
+
+#step-video #lyrics #jp-lyrics {
+	padding-left: 120px;
+	padding-right: 300px;
+	text-align: left;
+}
+
+#step-video #lyrics #cn-lyrics {
+	padding-right: 120px;
+	padding-left: 300px;
+	text-align: right;
+}
+
+#step-video #lyrics #horizon {
+	width: 100%;
+	height: 3px;
+	margin: 5px 0;
+	background: -webkit-linear-gradient(right, transparent 5%, white 50%, transparent 95%);
+}

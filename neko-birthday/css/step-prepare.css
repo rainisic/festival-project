@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+#step-prepare {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#step-prepare #background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	z-index: -1;
+	margin: 0;
+	padding: 0;
+}
+
+#step-prepare h1 {
+	position: relative;
+	margin-top: 50px;
+	margin-left: 50px;
+	font-family: "Segoe Script";
+	font-size: 3.5em;
+	text-shadow: 3px 5px 5px #aaa;
+	-webkit-animation: header-onload-show 1s ease;
+	cursor: default;
+}
+
+#step-prepare #smile {
+	position: absolute;
+	-webkit-transition: 1000ms;
+}
+
+#step-prepare h1:hover #smile {
+	-webkit-transform: rotate(90deg);
+}
+
+#step-prepare #ribbon {
+	position: fixed;
+	top: 60px;
+	right: -50px;
+	width: 250px;
+	height: 30px;
+	-webkit-transform: rotate(45deg);
+	background-image: -webkit-linear-gradient(bottom, rgb(170, 0, 0), rgb(160, 0, 0));
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: middle;
+	border-top: 1px white dashed;
+	border-bottom: 1px white dashed;
+	outline: 1px rgb(170, 0, 0) solid;
+	box-shadow: 0 0 10px gray;
+	z-index: 99;
+	-webkit-animation: ribbon-onload-show 3s ease;
+}
+
+#step-prepare #operation-list {
+	width: 500px;
+	list-style: none;
+	margin-left: 120px;
+	margin-top: 100px;
+	padding: 0;
+	font-family: "Segoe Script";
+	font-size: 2em;
+	-webkit-animation: list-onload-show 2s linear;
+}
+
+#step-prepare #operation-list li {
+	margin: 50px 0;
+}
+
+#step-prepare #operation-list li a {
+	cursor: pointer;
+	text-shadow: 2px 1px 3px gray;
+	-webkit-transition: all 200ms;
+}
+
+#step-prepare #operation-list li a:hover {
+	color: #c00;
+	font-size: 1.2em;
+}
+
+@-webkit-keyframes ribbon-onload-show {
+	0% {
+		-webkit-transform: rotate(595deg) scale(5, 5);
+		opacity: 0;
+	}
+	60% {
+		-webkit-transform: rotate(595deg) scale(5, 5);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: rotate(45deg) scale(1, 1);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes header-onload-show {
+	0% {
+		margin-left: -1000px;
+	}
+	70% {
+		margin-left: 70px;
+	}
+	100% {
+		margin-left: 50px;
+	}
+}
+
+@-webkit-keyframes list-onload-show {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
