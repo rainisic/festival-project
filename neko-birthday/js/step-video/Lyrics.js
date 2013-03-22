@@ -73,6 +73,4 @@ Lyrics.prototype.play = function() {
 		
 		
 	}, 20);
-
-	$("body").click(function() { console.log(delay); });
 }
