@@ -70,7 +70,5 @@ Lyrics.prototype.play = function() {
 				$("#cn-lyrics").text(sentences[index][3]);
 			});
 		}
-		
-		
 	}, 20);
 }

@@ -8,7 +8,7 @@ $(document).ready(function() {
 	sceneController.show($("#step-prepare"));
 
 	// DEBUG
-//	sceneController.show($("#step-video"));
+	sceneController.show($("#step-video"));
 
 	// Add event listener.
 	addEventListener();
@@ -26,15 +26,12 @@ $(document).ready(function() {
 	$("#enter-step-album").click(function() { sceneController.show($("#step-album")); });
 	$("#enter-step-reset").click(function() { sceneController.show($("#step-prepare")); });
 
-
-/*
 	setTimeout(function() {
 		var player = document.querySelector("#step-video audio");
 		lyrics.play();
 		player.play();
 		//player.currentTime = 110;
 	}, 1000);
-*/
 });
 
 function addEventListener() {
