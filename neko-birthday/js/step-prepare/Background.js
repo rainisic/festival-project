@@ -14,6 +14,7 @@ Background.prototype.addActionListener = function() {
 
 	// On window resize.
 	var current = this;
+
 	$(window).resize(function() { current.autosize(); });
 }
 

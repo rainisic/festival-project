@@ -35,3 +35,14 @@
 	margin: 5px 0;
 	background: -webkit-linear-gradient(right, transparent 5%, white 50%, transparent 95%);
 }
+
+#step-video .enter-step-reset {
+	position: fixed;
+	display: none;
+	font-family: "Segoe Script";
+	bottom: 50px;
+	left: 50px;
+	color: white;
+	font-size: 1.5em;
+	cursor: pointer;
+}

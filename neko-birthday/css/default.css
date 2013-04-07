@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("step-prepare.css");
 @import url("step-video.css");
+@import url("step-album.css");
 
 html, body {
 	margin: 0;

@@ -32,6 +32,7 @@
 		<audio preload>
 			<source src="sounds/step-video-bgsound.mp3" type="audio/mpeg">
 		</audio>
+		<a class="enter-step-reset">Back to the Menu</a>
 	</section>
 
 	<!-- Music room scene -->
@@ -40,14 +41,22 @@
 
 	<!-- Album scene -->
 	<section id="step-album" class="scene">
+		<div id="photofy-frame">
+			<div id="photofy"></div>
+		</div>
+		<a class="enter-step-reset">←Menu</a>
 	</section>
 	
 	<!-- Include JavaScript library -->
 	<script type="text/javascript" src="../lib/js/jquery/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="../lib/js/jquery/jquery-migrate-1.1.1.min.js"></script>
+	<script type="text/javascript" src="../lib/js/photofy/jquery-photofy-2.0.43.min.js"></script>
 	<script type="text/javascript" src="js/default.js"></script>
 	<script type="text/javascript" src="js/SceneController.js"></script>
 	<script type="text/javascript" src="js/step-prepare/Background.js"></script>
 	<script type="text/javascript" src="js/step-video/Lyrics.js"></script>
+	<script type="text/javascript" src="js/step-video/Story.js"></script>
+	<script type="text/javascript" src="js/step-album/images.js"></script>
+	<script type="text/javascript" src="js/step-album/Album.js"></script>
 </body>
 </html>

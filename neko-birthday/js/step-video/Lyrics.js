@@ -60,8 +60,14 @@ Lyrics.prototype.play = function() {
 			$("#lyrics").fadeOut(duration, function() {
 
 				// Stop lyrics.
-				if (index == sentences.length) {
+				if (index == sentences.length - 1) {
+					
+					// Clear interval
 					clearInterval(lrcPlay);
+					
+					// Show back button.
+					$("#step-video .enter-step-reset").fadeIn();
+					
 					return ;
 				}
 				
