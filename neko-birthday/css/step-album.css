@@ -39,7 +39,23 @@
 }
 
 #photofy a.photofy_overlay_close {
-	font-size: 12px;
+	position: absolute;
+	display: block;
+	right: -8px;
+	top: -8px;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: black;
+	color: white;
+	border: 3px white solid;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 10;
+	text-decoration: none;
 }
 
 #photofy a.photofy_thumbnail {

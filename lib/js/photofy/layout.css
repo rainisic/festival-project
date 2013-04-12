@@ -28,7 +28,18 @@ h1, h2, h3
 
 #photofy a.photofy_overlay_close
 {
+	position: absolute;
+	display: block;
+	right: -12px;
+	top: -12px;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+	background-color: black;
+	color: white;
+	border: 2px white solid;
 	font-size: 12px;
+	z-index: 10;
 }
 
 #photofy a.photofy_thumbnail
